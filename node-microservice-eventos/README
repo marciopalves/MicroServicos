@@ -1,10 +1,9 @@
 Como rodar o projeto
 
 1 - Em um terminal, rode o banco de dados mongo com o comando mongod;
-2 - Abra um terminal na pasta do projeto e execute o comando npm update para que as bibliotecas utilizadas no projeto sejam baixadas *;
-3 - Uma vez que as bibliotecas forem baixadas, rode o projeto com o comando npm run dev
-4 - Se tudo ocorrer bem, o micro serviço estará rodando na porta 4004
+2 - Abra um terminal na pasta do projeto e execute o comando npm run dev
 
-Obs.: Se a porta 4004 já estiver em uso, altere a porta padrão no arquivo server.js, alterando o valor da constante "port", de 4004 para a porta desejada.
+Se tudo ocorrer bem, o micro serviço estará rodando na porta 4004
 
-* Apenas na primeira vez em que for executar o projeto.
+Obs¹.: Se a porta 4004 já estiver em uso, altere a porta padrão no arquivo "server.js", alterando o valor da constante "port", de 4004 para a porta desejada.
+Obs².: Se estiver rodando o projeto pela primeira vez, antes de executar o segundo passo, execute o comando "npm update" para que as bibliotecas utilizadas no projeto sejam baixadas.
