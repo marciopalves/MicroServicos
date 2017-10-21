@@ -1,0 +1,166 @@
+{
+	"id": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+	"name": "ApiSpringUsuarios",
+	"description": "",
+	"order": [
+		"d398cf78-f5a2-99d2-bbd1-9d5076ae6b17",
+		"b39d9359-612e-a0af-8346-90b4ed166f79",
+		"56e87992-35ff-2ec1-abb6-e97b7720cbd8",
+		"07a4520b-ad46-213a-8b83-ae1e8a1a9b46",
+		"31a2bece-5893-8dc6-954e-2ec5c96d0af0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1508585181687,
+	"owner": "2204184",
+	"public": false,
+	"requests": [
+		{
+			"id": "07a4520b-ad46-213a-8b83-ae1e8a1a9b46",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/usuarios/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/usuarios/1",
+			"description": "buscando usuário pelo código",
+			"descriptionFormat": "html",
+			"time": 1508588082407,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "31a2bece-5893-8dc6-954e-2ec5c96d0af0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/usuarios/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/usuarios/1",
+			"description": "atualizar usuário",
+			"descriptionFormat": "html",
+			"time": 1508588212300,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"id\": 1,\n    \"nome\": \"João Canabrava\",\n    \"cpf\": \"333333333\",\n    \"email\": \"joaobirita@bol.com\",\n    \"telefone\": \"49 132345489\"\n}"
+		},
+		{
+			"id": "56e87992-35ff-2ec1-abb6-e97b7720cbd8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/usuarios/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/usuarios/",
+			"description": "buscando todos usuários",
+			"descriptionFormat": "html",
+			"time": 1508587774061,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nome\":\"João Canabrava\",\n\t\"cpf\":\"11111111111\",\n\t\"email\":\"joaobirita@bol.com\",\n\t\"telefone\":\"41 812345489\"\n\t\n}"
+		},
+		{
+			"id": "b39d9359-612e-a0af-8346-90b4ed166f79",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/usuarios",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/usuarios",
+			"description": "inserindo usuarios",
+			"descriptionFormat": "html",
+			"time": 1508587658188,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nome\":\"Gasparzinho\",\n\t\"cpf\":\"2222222222\",\n\t\"email\":\"fantasminhacamarada@bol.com\",\n\t\"telefone\":\"41 812345489\"\n\t\n}"
+		},
+		{
+			"id": "d398cf78-f5a2-99d2-bbd1-9d5076ae6b17",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/usuarios",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3de54e64-6c50-6772-fed5-00f6aa02acfd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/usuarios",
+			"description": "Inserindo usuários ",
+			"descriptionFormat": "html",
+			"time": 1508587613046,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nome\":\"João Canabrava\",\n\t\"cpf\":\"1111111111\",\n\t\"email\":\"biritas@bol.com\",\n\t\"telefone\":\"41 812345489\"\n\t\n}"
+		}
+	]
+}
