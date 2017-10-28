@@ -7,9 +7,17 @@ Evento.updateOptions({ new: true, runValidators: true })
 
 Evento.after('get', function (req, res, next) {
   var eventos = res.locals.bundle
+  var url = url_api_externa
+  var path = req.path
 
-  consultaExterna(url_api_externa).then(function (body) {
-    console.log("Dados oriundos do microserviço:" + body)
+  path = path.replace('/eventos', '')
+  path = path.replace('/', '')
+
+  if (path != '') {
+    url = url + res.locals.bundle.idCriador
+  }
+
+  consultaExterna(url).then(function (body) {
     res.json({ eventos, criadores: body })
   }
     , function (err) {
@@ -27,9 +35,19 @@ function hasUsuario(req, res, next) {
   //Só prossegue com a requisição/ação se o idCriador for equivalente a um usuário existente na API externa
   consultaExterna(url).then(function (body) {
     next();
-  }, function (err) {
-    var erroAPIExterna = err.error;
-    console.error("Erro da API externa:" + erroAPIExterna.mensagemDesenvolvedor);
+  }, function (error, res) {
+
+    var erroAPIExterna = {
+      mensagemDesenvolvedor: "Microserviço externo indisponível",
+      status: 404,
+      titulo: "O módulo de usuários não está disponível no momento, tente mais tarde"
+    }
+
+    if (res != null) {
+      erroAPIExterna = error.error
+    }
+
+    console.error("Erro:" + error);
     res.status(erroAPIExterna.status).json({ erro: erroAPIExterna.titulo });
   });
 }
