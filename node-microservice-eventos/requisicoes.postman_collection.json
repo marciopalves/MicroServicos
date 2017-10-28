@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "API MicroServices Eventos",
-		"_postman_id": "cede8f2f-ba32-b208-304c-ee00cb3dc0d0",
+		"_postman_id": "af727fa7-e826-e296-7fcc-0fd8d92eafd4",
 		"description": "API do trabalho de microserviços da disciplina de Backend Avançado da especialização em Desenvolvimento Web e Mobile Fullstack.\n\nEsta API corresponde ao microserviço de eventos, desenvolvido em NodeJS.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -19,7 +19,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "Retorna os eventos e usuários, se o microserviço de usuários estiver disponível"
 			},
 			"response": []
@@ -36,7 +39,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "Retorna os eventos e usuários, se o microserviço de usuários estiver disponível"
 			},
 			"response": []
@@ -199,6 +205,23 @@
 						}
 					]
 				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar evento",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/59f4c98c88b0cb1c94a5a9f2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
 				"description": ""
 			},
 			"response": []

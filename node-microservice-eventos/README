@@ -1,4 +1,7 @@
-Como rodar o projeto
+# Requisições
+O arquivo "requisicoes.postman_collection.json" contém um pacote de requisições GET, GET/:id, POST, PUT e DELETE previamente escritas para testes que poderão ser importadas no programa de requisições Postman. Talvez, os IDs gerados em outras máquinas possam ser distintos, prestar atenção neste caso.
+
+# Como rodar o projeto
 
 1 - Em um terminal, rode o banco de dados mongo com o comando mongod;
 2 - Abra um terminal na pasta do projeto e execute o comando npm run dev
