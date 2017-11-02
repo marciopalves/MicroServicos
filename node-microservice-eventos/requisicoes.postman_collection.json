@@ -1,0 +1,230 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API MicroServices Eventos",
+		"_postman_id": "af727fa7-e826-e296-7fcc-0fd8d92eafd4",
+		"description": "API do trabalho de microserviços da disciplina de Backend Avançado da especialização em Desenvolvimento Web e Mobile Fullstack.\n\nEsta API corresponde ao microserviço de eventos, desenvolvido em NodeJS.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ler Eventos",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Retorna os eventos e usuários, se o microserviço de usuários estiver disponível"
+			},
+			"response": []
+		},
+		{
+			"name": "Ler Evento específico",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/59eb8bcbc288fa67121373fa",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Retorna os eventos e usuários, se o microserviço de usuários estiver disponível"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Evento",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Festa do chupacabra 122",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "descricao",
+							"value": "Festa de outro mundo",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataInicio",
+							"value": "06/11/1992",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataFim",
+							"value": "31/12/9999",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tipo",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "endereco",
+							"value": "Porto dos raptores alienígenas",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "quantidadePessoas",
+							"value": "100",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "quantidadeProfissionais",
+							"value": "10",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "idCriador",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Retorna os eventos e usuários, se o microserviço de usuários estiver disponível"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar evento",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/59eb8ce825d036696d70a899",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Festa do chupacabra 122",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "descricao",
+							"value": "Festa de outro mundo",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataInicio",
+							"value": "06/11/1992",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataFim",
+							"value": "31/12/9999",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tipo",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "endereco",
+							"value": "Porto dos raptores alienígenas 12313131",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "quantidadePessoas",
+							"value": "100",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "quantidadeProfissionais",
+							"value": "10",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "idCriador",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar evento",
+			"request": {
+				"url": "http://localhost:4004/api/eventos/59f4c98c88b0cb1c94a5a9f2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
